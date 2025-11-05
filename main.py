@@ -1,13 +1,5 @@
 import pickle
-from random import randint
-
-
-class Foo:
-    def __init__(self):
-        self.x = randint(1, 1_000)
-
-    def __repr__(self):
-        return self.x
+from foo import Foo
 
 
 def run():
