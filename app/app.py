@@ -6,9 +6,9 @@ from foo import Foo
 app = Flask(__name__)
 
 
-with open("./app/data/foos.pkl", "rb") as f:
+DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "foos.pkl")
+with open(DATA_PATH, "rb") as f:
     FOOS = pickle.load(f)
-
 
 @app.route("/")
 def index():
