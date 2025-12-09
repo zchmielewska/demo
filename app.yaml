@@ -1,3 +1,4 @@
+type: web
 command:
   - gunicorn
   - --bind
